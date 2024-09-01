@@ -49,7 +49,8 @@ AUDIO_DIR = 'static'
 os.makedirs(AUDIO_DIR, exist_ok=True)
 
 # Initialize Groq API settings
-GROQ_API_KEY = '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'
+# Access the Groq API key from Streamlit secrets
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 groq_client = Groq(api_key=GROQ_API_KEY)
 
 def clean_text_for_tts(text):
