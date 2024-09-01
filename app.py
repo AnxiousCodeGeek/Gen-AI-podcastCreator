@@ -24,14 +24,8 @@ subprocess.run(["git", "clone", "https://github.com/myshell-ai/MeloTTS.git"])
 # !python -m unidic download
 
 import streamlit as st
-# from gtts import gTTS
-import io
-from io import BytesIO
-from elevenlabs import VoiceSettings
-from elevenlabs.client import ElevenLabs
 import re
 import os
-import requests
 from groq import Groq
 from melo.api import TTS
 
